@@ -1,0 +1,17 @@
+{
+  "name": "@accessible-menu/base-menu",
+  "version": "1.0.0",
+  "description": "A JavaScript library to help generate subclasses for WCAG accessible menus in the DOM.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Accessible-Menu/base-menu.git"
+  },
+  "author": "Nick Milton <nickdjm+accessible-menu@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Accessible-Menu/base-menu/issues"
+  },
+  "homepage": "https://github.com/Accessible-Menu/base-menu#readme"
+}
