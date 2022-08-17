@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "A JavaScript library to help generate subclasses for WCAG accessible menus in the DOM.",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Accessible-Menu/base-menu.git"
@@ -13,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Accessible-Menu/base-menu/issues"
   },
-  "homepage": "https://github.com/Accessible-Menu/base-menu#readme"
+  "homepage": "https://github.com/Accessible-Menu/base-menu#readme",
+  "devDependencies": {
+    "vite": "^3.0.8"
+  }
 }
