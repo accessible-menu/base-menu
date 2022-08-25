@@ -6,7 +6,6 @@ module.exports = {
   },
   extends: ["standard", "plugin:jsdoc/recommended", "prettier"],
   plugins: ["jsdoc"],
-  parser: "@babel/eslint-parser",
   parserOptions: {
     sourceType: "module",
   },
