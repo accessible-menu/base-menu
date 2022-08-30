@@ -1,12 +1,17 @@
 import { describe, it, expect } from "vitest";
+import { nav } from "../test-menus";
 import BaseMenu from "../../src/BaseMenu";
 import BaseMenuItem from "../../src/BaseMenuItem";
 import BaseMenuLink from "../../src/BaseMenuLink";
 import BaseMenuToggle from "../../src/BaseMenuToggle";
 
 describe("BaseMenu constructor tests:", () => {
+  document.body.innerHTML = nav;
+
   // Initialize the menu.
-  const menu = new BaseMenu();
+  const menu = new BaseMenu({
+    menuElement: document.querySelector("nav"),
+  });
 
   it.concurrent("has _MenuType set to BaseMenu.", async () => {
     expect(menu._MenuType).toBe(BaseMenu);
