@@ -9,7 +9,6 @@ export default defineConfig({
       formats: ["iife", "es"],
       fileName: format => `base-menu.${format}.js`,
     },
-    minify: "terser",
   },
   test: {
     environment: "jsdom",
