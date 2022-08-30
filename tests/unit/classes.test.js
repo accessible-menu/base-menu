@@ -1,25 +1,26 @@
+import { describe, it, expect } from "vitest";
 import BaseMenu from "../../src/BaseMenu";
 import BaseMenuItem from "../../src/BaseMenuItem";
 import BaseMenuLink from "../../src/BaseMenuLink";
 import BaseMenuToggle from "../../src/BaseMenuToggle";
 
-describe("BaseMenu's constructors are as follows:", () => {
+describe("BaseMenu constructor tests:", () => {
   // Initialize the menu.
   const menu = new BaseMenu();
 
-  test("_MenuType is BaseMenu.", () => {
+  it.concurrent("has _MenuType set to BaseMenu.", async () => {
     expect(menu._MenuType).toBe(BaseMenu);
   });
 
-  test("_MenuItemType is BaseMenuItem", () => {
+  it.concurrent("has _MenuItemType set to BaseMenuItem", async () => {
     expect(menu._MenuItemType).toBe(BaseMenuItem);
   });
 
-  test("_MenuLinkType is BaseMenuLink", () => {
+  it.concurrent("has _MenuLinkType set to BaseMenuLink", async () => {
     expect(menu._MenuLinkType).toBe(BaseMenuLink);
   });
 
-  test("_MenuToggleType is BaseMenuToggle", () => {
+  it.concurrent("has _MenuToggleType set to BaseMenuToggle", async () => {
     expect(menu._MenuToggleType).toBe(BaseMenuToggle);
   });
 });
