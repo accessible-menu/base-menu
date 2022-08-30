@@ -11,4 +11,7 @@ export default defineConfig({
     },
     minify: "terser",
   },
+  test: {
+    environment: "jsdom",
+  },
 });
