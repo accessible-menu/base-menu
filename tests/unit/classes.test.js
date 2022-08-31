@@ -5,12 +5,12 @@ import BaseMenuItem from "../../src/BaseMenuItem";
 import BaseMenuLink from "../../src/BaseMenuLink";
 import BaseMenuToggle from "../../src/BaseMenuToggle";
 
-describe("BaseMenu constructor tests:", () => {
+describe("BaseMenu constructor tests", () => {
   document.body.innerHTML = nav;
 
   // Initialize the menu.
   const menu = new BaseMenu({
-    menuElement: document.querySelector("nav"),
+    menuElement: document.querySelector("nav ul"),
   });
 
   it.concurrent("has _MenuType set to BaseMenu.", async () => {
