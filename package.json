@@ -46,7 +46,6 @@
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "standard-version": "^9.5.0",
-    "terser": "^5.15.0",
     "vite": "^3.0.8",
     "vitest": "^0.22.1"
   }
