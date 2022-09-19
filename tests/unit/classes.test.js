@@ -13,19 +13,19 @@ describe("BaseMenu constructor tests", () => {
     menuElement: document.querySelector("nav ul"),
   });
 
-  it.concurrent("has _MenuType set to BaseMenu.", async () => {
+  it("has _MenuType set to BaseMenu.", () => {
     expect(menu._MenuType).toBe(BaseMenu);
   });
 
-  it.concurrent("has _MenuItemType set to BaseMenuItem", async () => {
+  it("has _MenuItemType set to BaseMenuItem", () => {
     expect(menu._MenuItemType).toBe(BaseMenuItem);
   });
 
-  it.concurrent("has _MenuLinkType set to BaseMenuLink", async () => {
+  it("has _MenuLinkType set to BaseMenuLink", () => {
     expect(menu._MenuLinkType).toBe(BaseMenuLink);
   });
 
-  it.concurrent("has _MenuToggleType set to BaseMenuToggle", async () => {
+  it("has _MenuToggleType set to BaseMenuToggle", () => {
     expect(menu._MenuToggleType).toBe(BaseMenuToggle);
   });
 });

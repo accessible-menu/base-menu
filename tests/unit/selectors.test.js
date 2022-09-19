@@ -11,26 +11,23 @@ describe("BaseMenu default selector tests", () => {
     menuElement: document.querySelector("nav ul"),
   });
 
-  it.concurrent("has the 'menuItems' selector set to 'li'", async () => {
+  it("has the 'menuItems' selector set to 'li'", () => {
     expect(menu.selectors.menuItems).toBe("li");
   });
 
-  it.concurrent("has the 'menuLinks' selector set to 'a'", async () => {
+  it("has the 'menuLinks' selector set to 'a'", () => {
     expect(menu.selectors.menuLinks).toBe("a");
   });
 
-  it.concurrent("has the 'submenuItems' selector set to ''", async () => {
+  it("has the 'submenuItems' selector set to ''", () => {
     expect(menu.selectors.submenuItems).toBe("");
   });
 
-  it.concurrent(
-    "has the 'submenuToggles' selector set to 'button'",
-    async () => {
-      expect(menu.selectors.submenuToggles).toBe("button");
-    }
-  );
+  it("has the 'submenuToggles' selector set to 'button'", () => {
+    expect(menu.selectors.submenuToggles).toBe("button");
+  });
 
-  it.concurrent("has the 'submenus' selector set to 'ul'", async () => {
+  it("has the 'submenus' selector set to 'ul'", () => {
     expect(menu.selectors.submenus).toBe("ul");
   });
 });
@@ -42,7 +39,7 @@ describe("BaseMenu custom selector tests", () => {
   // Set up the DOM.
   document.body.innerHTML = nav;
 
-  it.concurrent("has menu item selector set to custom value", async () => {
+  it("has menu item selector set to custom value", () => {
     // Initialize the menu.
     const menu = new BaseMenu({
       menuElement: document.querySelector("nav ul"),
@@ -52,7 +49,7 @@ describe("BaseMenu custom selector tests", () => {
     expect(menu.selectors.menuItems).toBe(customSelector);
   });
 
-  it.concurrent("has menu link selector set to custom value", async () => {
+  it("has menu link selector set to custom value", () => {
     // Initialize the menu.
     const menu = new BaseMenu({
       menuElement: document.querySelector("nav ul"),
@@ -62,7 +59,7 @@ describe("BaseMenu custom selector tests", () => {
     expect(menu.selectors.menuLinks).toBe(customSelector);
   });
 
-  it.concurrent("has submenu item selector set to custom value", async () => {
+  it("has submenu item selector set to custom value", () => {
     // Initialize the menu.
     const menu = new BaseMenu({
       menuElement: document.querySelector("nav ul"),
@@ -72,7 +69,7 @@ describe("BaseMenu custom selector tests", () => {
     expect(menu.selectors.submenuItems).toBe(customSelector);
   });
 
-  it.concurrent("has submenu toggle selector set to custom value", async () => {
+  it("has submenu toggle selector set to custom value", () => {
     // Initialize the menu.
     const menu = new BaseMenu({
       menuElement: document.querySelector("nav ul"),
@@ -82,7 +79,7 @@ describe("BaseMenu custom selector tests", () => {
     expect(menu.selectors.submenuToggles).toBe(customSelector);
   });
 
-  it.concurrent("has submenu selector set to custom value", async () => {
+  it("has submenu selector set to custom value", () => {
     // Initialize the menu.
     const menu = new BaseMenu({
       menuElement: document.querySelector("nav ul"),

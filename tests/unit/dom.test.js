@@ -19,27 +19,27 @@ describe("BaseMenu default dom tests", () => {
   });
   menu._setDOMElements();
 
-  it.concurrent("has the correct nav element in the dom.", async () => {
+  it("has the correct nav element in the dom.", () => {
     expect(menu.dom.menu).toBe(menuElement);
   });
 
-  it.concurrent("has menu items matching the dom.", async () => {
+  it("has menu items matching the dom.", () => {
     expect(menu.dom.menuItems).toStrictEqual(menuItems);
   });
 
-  it.concurrent("has menu links matching the dom.", async () => {
+  it("has menu links matching the dom.", () => {
     expect(menu.dom.menuLinks).toStrictEqual(menuLinks);
   });
 
-  it.concurrent("has no submenu items.", async () => {
+  it("has no submenu items.", () => {
     expect(menu.dom.submenuItems).toStrictEqual([]);
   });
 
-  it.concurrent("has no submenu toggles.", async () => {
+  it("has no submenu toggles.", () => {
     expect(menu.dom.submenuToggles).toStrictEqual([]);
   });
 
-  it.concurrent("has no submenus.", async () => {
+  it("has no submenus.", () => {
     expect(menu.dom.submenus).toStrictEqual([]);
   });
 });
