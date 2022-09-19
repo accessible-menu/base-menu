@@ -23,6 +23,12 @@ export function isValidInstance(contructor, elements) {
       );
     }
 
+    if (Object.keys(elements).length < 1) {
+      throw new Error(
+        "AccessibleMenu: The elements object must have at least one key."
+      );
+    }
+
     for (const key in elements) {
       if (!(elements[key] instanceof contructor)) {
         const elementType = typeof elements[key];
